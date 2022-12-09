@@ -2,6 +2,8 @@ name: tf03k
 manufacturer: Baiway
 model: tf03k coulomb meter
 mqtt_server: tcp://192.168.1.132:1883
+mqtt_user: roby
+mqtt_pwd: Roby1972
 ha_register: true
 serial_port: /dev/ttyUSB0
 topic: homeassistant/sensor/tf03k/state
