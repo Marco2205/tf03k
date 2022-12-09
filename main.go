@@ -34,6 +34,8 @@ func main() {
 
 	opts := MQTT.NewClientOptions().AddBroker(cfg.MqttServer)
 	opts.SetClientID(cfg.Name)
+	opts.SetUsername(cfg.MqttUser)  //aggiungo le credenziali di accesso al server mqtt
+	opts.SetPassword(cfg.MqttPwd)
 	opts.SetDefaultPublishHandler(f)
 
 	//create and start a client using the above ClientOptions
