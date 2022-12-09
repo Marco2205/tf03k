@@ -18,6 +18,8 @@ type config struct {
 	Manufacturer string   `yaml:"manufacturer"`
 	Model        string   `yaml:"model"`
 	MqttServer   string   `yaml:"mqtt_server"`
+	MqttUser     string   `yaml:"mqtt_user"`
+	MqttPwd      string   `yaml:"mqtt_pwd"`
 	SerialPort   string   `yaml:"serial_port"`
 	Topic        string   `yaml:"topic"`
 	HaRegister   bool     `yaml:"ha_register"`
